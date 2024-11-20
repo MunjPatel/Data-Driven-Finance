@@ -15,10 +15,22 @@ data_reduced = pca.fit_transform(data)
 # 3d visualization
 fig = plt.figure(figsize=(10, 7))
 ax = fig.add_subplot(111, projection='3d')
-ax.scatter(data_reduced[:, 0], data_reduced[:, 1], data_reduced[:, 2], c='b', alpha=0.6)
-ax.set_title("PCA Projection")
-ax.set_xlabel("PC1")
-ax.set_ylabel("PC2")
-ax.set_zlabel("PC3")
-plt.show()
 
+scatter = ax.scatter(
+    data_reduced[:, 0], 
+    data_reduced[:, 1], 
+    data_reduced[:, 2], 
+    c=np.arange(n_obs),  
+    cmap='viridis', 
+    alpha=0.7
+)
+
+# setting titles and labels
+ax.set_title("3D PCA Projection for Portfolio Risk")
+ax.set_xlabel("Principal Component 1")
+ax.set_ylabel("Principal Component 2")
+ax.set_zlabel("Principal Component 3")
+
+# adding colorbar for interpretation
+plt.colorbar(scatter, label="Observation Index")
+plt.show()
