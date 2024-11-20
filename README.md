@@ -29,4 +29,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Special thanks to the readers of the accompanying Medium article for their feedback and support.
 
-For a detailed explanation of the concepts and methodologies used, please refer to the original article: [Data-Driven Finance: Clustering Algorithms and Dimensionality Reduction in Risk and Portfolio Management](https://medium.com/@patelmunj2011/data-driven-finance-clustering-algorithms-and-dimensionality-reduction-in-risk-and-portfolio-9eeb055046ad)
+For a detailed explanation of the concepts and methodologies used, please refer to the original [article](https://medium.com/@patelmunj2011/data-driven-finance-clustering-algorithms-and-dimensionality-reduction-in-risk-and-portfolio-9eeb055046ad)
